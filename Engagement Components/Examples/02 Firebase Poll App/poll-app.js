@@ -22,13 +22,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Your Firebase project configuration goes here
     // For this tutorial, we'll use a demo configuration
     // In a real app, you would replace these with your actual Firebase project settings
-    apiKey: "your-api-key",
-    authDomain: "your-project.firebaseapp.com",
-    databaseURL: "https://your-project-default-rtdb.firebaseio.com",
-    projectId: "your-project-id",
-    storageBucket: "your-project.appspot.com",
-    messagingSenderId: "your-sender-id",
-    appId: "your-app-id"
+    apiKey: "AIzaSyAoNpIzorEZ0Fqt7dR8VDw9HsySx-SlTew",
+    authDomain: "cdw-template.firebaseapp.com",
+    projectId: "cdw-template",
+    storageBucket: "cdw-template.firebasestorage.app",
+    messagingSenderId: "509005864636",
+    appId: "1:509005864636:web:c1cd463c6536a6ee523ab9",
+    measurementId: "G-L18ETD4ENC"
   };
 
   // Initialize Firebase - this connects your app to Firebase services
