@@ -5,7 +5,7 @@ async function chatWithOpenAI(userMessage) {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "Authorization": "Bearer YOUR_API_KEY" // <--- Replace with your actual API key!
+      "Authorization": "Bearer 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" // <--- Replace with your actual API key!
     },
     body: JSON.stringify({
       model: "gpt-3.5-turbo",

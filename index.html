@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <!-- 元信息与基础样式/脚本 -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CDW 作品集 | 数字对象总览</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css" />
+  <script defer src="site.js"></script>
+</head>
+<body>
+  <!-- 顶部导航：锚点定位，避免整页跳转造成的加载空隙 -->
+  <header class="site-header">
+    <div class="brand">Computational Design Workflows</div>
+    <nav class="nav">
+      <a href="#twoD">2D</a>
+      <a href="#threeD">3D</a>
+      <a href="#temporal">Temporal</a>
+      <a href="#relational">Relational</a>
+      <a href="#geospatial">Geospatial</a>
+      <a href="#engagement">Engagement</a>
+    </nav>
+  </header>
+
+  <!-- 英雄区：项目概览 -->
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>Course works</h1>
+      <p>Merged together</p>
+      <div class="meta">
+        <span>Year: 2025</span>
+        <span>Course: CDW</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2D Spatial Canvas -->
+  <section id="twoD" class="section">
+    <div class="section-head">
+      <h2>2D Spatial Canvas（p5.js）</h2>
+      <p>
+        练习意图：以基础图元与网格为语法，探索2D空间构成与动态更新；关注简洁几何、色彩与层次关系。
+        交互要点：持续绘制、基本图元组合。数据：内置参数，无外部数据集。
+      </p>
+      <div class="links">
+        <a target="_blank" rel="noopener" href="Spatial-Canvases/2D Canvas P5/Examples/index.html">独立页面查看</a>
+      </div>
+    </div>
+    <!-- 使用同源 iframe 内嵌现有示例页；加载完成后将自动按内容高度自适应，无内滚动条 -->
+    <div class="frame-wrap">
+      <iframe loading="lazy" data-autoresize src="Spatial-Canvases/2D Canvas P5/Examples/index.html" title="2D Spatial Canvas"></iframe>
+    </div>
+  </section>
+
+  <!-- 3D Spatial Canvas -->
+  <section id="threeD" class="section alt">
+    <div class="section-head">
+      <h2>3D Spatial Canvas（Three.js）</h2>
+      <p>
+        练习意图：通过基本几何体、光照与轨道相机，建立最小三维空间构图原型。
+        交互要点：旋转、轨道控制、网格参考。数据：内置参数，无外部数据集。
+      </p>
+      <div class="links">
+        <a target="_blank" rel="noopener" href="Spatial-Canvases/3D Canvas ThreeJS/Examples/index.html">独立页面查看</a>
+      </div>
+    </div>
+    <div class="frame-wrap">
+      <iframe loading="lazy" data-autoresize src="Spatial-Canvases/3D Canvas ThreeJS/Examples/index.html" title="3D Spatial Canvas"></iframe>
+    </div>
+  </section>
+
+  <!-- Temporal Structures -->
+  <section id="temporal" class="section">
+    <div class="section-head">
+      <h2>Temporal Structure（D3.js）</h2>
+      <p>
+        练习意图：以时间轴/甘特与日历热图表达时序关系与强度分布，强调比例、分组与标注的可读性。
+        交互要点：悬浮提示、并发区间、刻度与图例。
+        数据：本地 CSV（如 <code>events.csv</code>、<code>synthetic-data.csv</code>），在 GitHub Pages 上可直接加载。
+      </p>
+      <div class="links">
+        <a target="_blank" rel="noopener" href="Temporal Structures/Examples/index.html">独立页面查看</a>
+      </div>
+    </div>
+    <div class="frame-wrap">
+      <iframe loading="lazy" data-autoresize src="Temporal Structures/Examples/index.html" title="Temporal Structures"></iframe>
+    </div>
+  </section>
+
+  <!-- Relational Structures -->
+  <section id="relational" class="section alt">
+    <div class="section-head">
+      <h2>Relational Structure（D3.js Force）</h2>
+      <p>
+        练习意图：用力导引布局与多变量编码展示实体关系；尝试标签、连线、方向与拖拽交互。
+        交互要点：拖拽节点、悬浮高亮、缩放平移。
+        数据：CSV（<code>nodes.csv</code> 与 <code>edges.csv</code>）。
+      </p>
+      <div class="links">
+        <a target="_blank" rel="noopener" href="Relational Structures/Examples/index.html">独立页面查看</a>
+      </div>
+    </div>
+    <div class="frame-wrap">
+      <iframe loading="lazy" data-autoresize src="Relational Structures/Examples/index.html" title="Relational Structures"></iframe>
+    </div>
+  </section>
+
+  <!-- Geospatial Structures -->
+  <section id="geospatial" class="section">
+    <div class="section-head">
+      <h2>Geospatial Structure（Mapbox GL JS）</h2>
+      <p>
+        练习意图：以点/线/面图层与数据驱动样式表达地理要素与语义；扩展到外部 GeoJSON 加载与视域拟合。
+        交互要点：悬停强调、弹窗、筛选与键盘快捷。
+        数据：内置几何与本地 <code>manhattan.geojson</code>。
+        注意：Mapbox 访问令牌已在示例脚本内配置，仅作课程展示用途。
+      </p>
+      <div class="links">
+        <a target="_blank" rel="noopener" href="Geospatial Structures/index.html">独立页面查看</a>
+      </div>
+    </div>
+    <div class="frame-wrap">
+      <iframe loading="lazy" data-autoresize src="Geospatial Structures/index.html" title="Geospatial Structures"></iframe>
+    </div>
+  </section>
+
+  <!-- Engagement Components -->
+  <section id="engagement" class="section alt">
+    <div class="section-head">
+      <h2>Engagement Component（UI Elements）</h2>
+      <p>
+        练习意图：整合常见输入控件，建立人机交互的可用性基线；联动输出区即时反馈用户状态。
+        交互要点：滑条、复选、单选、下拉、文本输入的事件监听与状态汇总。
+        数据：表单状态（即时生成）。
+      </p>
+      <div class="links">
+        <a target="_blank" rel="noopener" href="Engagement Components/Examples/01 UI Elements/index.html">独立页面查看</a>
+      </div>
+    </div>
+    <div class="frame-wrap">
+      <iframe loading="lazy" data-autoresize src="Engagement Components/Examples/01 UI Elements/index.html" title="Engagement Components"></iframe>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>© 2025 CDW Portfolio</span>
+      <span>本页为汇总入口：单链接集中访问所有对象；代码在公共仓库，含完整注释。</span>
+    </div>
+  </footer>
+</body>
+</html>
